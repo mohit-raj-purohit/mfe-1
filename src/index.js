@@ -1,2 +1,2 @@
-window.app2Url = "https://wmf1.netlify.app/";
+window.app2Url = "https://wmf2.netlify.app/";
 import("./bootstrap");
