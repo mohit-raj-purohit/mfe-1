@@ -29,7 +29,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "app1",
       remotes: {
-        app2: "app2@[window.app2Url]/remoteEntry.js",
+        app2: "app2@[app2Url]/remoteEntry.js",
       },
       shared: {
         react: { singleton: true },
@@ -37,6 +37,7 @@ module.exports = {
         zustand: { singleton: true },
       },
     }),
+    new ExternalTemplateRemotesPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
