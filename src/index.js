@@ -1,2 +1,2 @@
-window.app2Url = "https://bucolic-sfogliatella-6c84f2.netlify.app";
+window.app2Url = "https://wmf1.netlify.app/";
 import("./bootstrap");
